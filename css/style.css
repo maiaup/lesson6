@@ -1,0 +1,33 @@
+.block-wraper {
+	width: 100%;
+	position: relative;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 2s;
+	transition: all 0.5s linear 2s;
+}
+.bike{
+    position:absolute;
+    width: 20%;
+    top: 0;
+    left: -10;
+    animation: bike 10s infinite;
+    animation-direction:normal;
+    animation-timing-function:ease-out;
+   
+}
+.car {
+    position:absolute;
+    top: 440px;
+    left: 200px;
+    width: 600px;
+    animation: sun 2s infinite;
+    transform: rotate(1deg);
+}
+@keyframes bike {
+    from {left: 0px;} 
+    to {left: 50%;}
+    0%   { transform: translate(10%, 100px); }
+    100% { transform: translate(10%, 10%);}
+}
